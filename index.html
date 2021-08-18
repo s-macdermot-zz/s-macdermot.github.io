@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Sam MacDermot</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=1,minimum-scale=1.0,maximum-scale=3.0">
+<link href="normalize.css" rel="stylesheet" type="text/css" />
+<style type="text/css">div#preload { display: none; }
+
+html {
+    /*background-color: #e6e7e8;*/
+    background-color:white;
+    color: #000;
+}
+
+body{
+    padding: 9em 2em 2em;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    font-size: .625rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-box-pack: justify; */
+    -ms-flex-pack: justify;
+    /* justify-content: space-between; */
+    padding-top: 2.5em 0 10em;
+}
+
+#sitetitle, #description {
+    position: fixed;
+    text-align: center;
+    color: black;
+    transform: rotate(90deg);
+    font-weight: 100;
+    font-size: 1.3em;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    margin: auto 20px;
+    height: 14px;
+}
+
+    #sitetitle {left: 0px;}
+    #description {right: 0px;}
+
+#overview {
+    display: block;
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    max-height: 800px;
+    top: 0;
+    bottom: 0;
+}
+/*
+@media screen and (max-width: 1152px), screen and (max-device-width: 768px)
+*/
+#projects {width: 580px;}
+
+#projects {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    overflow: visible;
+}
+
+    .img-wrap div {
+        display: none; 
+    }
+        article{
+            position: absolute;
+            top:0;
+            bottom: 0;
+            height:340px;
+            margin:auto;
+        }
+        h1{     
+            font-size: 1em;
+            margin-bottom: -1.9em;
+        }
+
+        a{
+            color: #222;
+            text-decoration: none;
+        }
+            a:hover{text-decoration: underline;}
+
+        #logo{
+
+            -webkit-filter: invert(100%);
+            width: 40px;
+        }
+
+    .img-wrap img.art {
+    	max-width: 100%;
+        max-height: 95%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 10px;
+        bottom: 10px;
+        margin: auto;
+    }
+
+
+    img { 
+        image-rendering: optimizeSpeed;             /*                     */
+        image-rendering: -moz-crisp-edges;          /* Firefox             */
+        image-rendering: -o-crisp-edges;            /* Opera               */
+        image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+        image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+        -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
+
+        position: absolute;
+        top: 0;
+        left: 43em;
+        right: 0;
+        bottom: 10px;
+        width: 52%;
+        max-width: 52%;
+        max-height: 85%;
+        margin: auto;
+        margin-left: 1em;
+        margin-top: 9em;
+        float: right;
+        margin-right: 3em;
+
+    }
+
+    li img{
+        display: none;
+    }
+
+    header{
+        position: absolute;
+        top: 4em;
+    }
+    #main{
+        display:none;
+        padding-left: 30px;
+        -webkit-box-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+        -webkit-box-ordinal-group: 3;
+    }
+    #covers-list {
+        
+        position: relative;
+    }
+    
+    #aside{
+        /*width: 500px;
+        /*-webkit-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        order: 1;*/
+    }
+    
+    .inner-wrapper{
+        text-align: right;
+    }
+    
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: left;
+    }
+
+        li{
+            /* width: 100%; */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+
+        }
+            li:hover{
+                font-weight:bold;
+                text-decoration: none;
+                cursor:pointer;
+            }
+    
+    .title{
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 250px;
+    }
+    .theme{
+        width: 114px;
+    }
+    .year{
+        width: 25px;
+        text-align: right
+    }
+    
+    li div{
+        position: absolute;
+        top: 40em;
+        font-weight: 100;
+        width: 400px;
+        display: none;
+        text-transform: none;
+        font-size: 8pt;
+    }
+        li div span{
+            background-color: #ffff6e;
+            font-size: 9pt;
+        }
+        li:hover div {
+            display:block;
+        }
+        
+
+        
+    ul li:hover img {
+        display:block;
+    }
+
+    ul:hover #mainimg {
+        display:none;
+    }
+
+
+
+        
+	</style>
+
+</script>
+</head>
+<body class="home blog projekt">
+    <header>
+        <b>Sam MacDermot</b>
+        <br/>Project Portfolio
+        <br/><span style="color:red">Confidential</span>
+    </header>
+    <ul>
+        <img alt="" src="nVtgTGafpM.gif" id="mainimg">
+
+        <li>
+            <span class="title">GDC - IKEA: Art Directing The Real World</span>
+            <span class="theme">PRESENTATION</span>
+            <span class="year">2021</span>
+            <img alt="" src="nVtgTGafpM.gif" id="cover">
+            <div><span>
+                Produced and spoke on IKEA first GDC presentation</br>
+                _</br></br>
+                <b>IKEA: Art Directing the Real-World</b>
+            </span></div>
+        </li>
+        <li>
+            <span class="title">Matrial Aquisition Using Machine Learning</span>
+            <span class="theme">AI</span>
+            <span class="year">2021</span>
+            <img alt="" src="WZU2rUwHi3.gif" id="cover">
+            <div><span>Led the <b>development</b> of iOS application fro recovering PBR textures from a single image, this included a synthetic training data pipeline for textiles, and neural network.</span></div>
+        </li>
+        <li>
+            <span class="title">Animation i Graph DB</span>
+            <span class="theme">Real-Time</span>
+            <span class="year">2021</span>
+            <img alt="" src="Picture1.gif" id="cover">
+            <div><span>Developed platform agnostic system to describe and store product part motion in a Graph Database PIM system.</span></div>
+        </li>
+        <li>
+            <span class="title">Capturing Homes Using LiDar</span>
+            <span class="theme">Real-Time</span>
+            <span class="year">2020</span>
+            <img alt="" src="iCLYv7WH82.gif" id="cover">
+            <div><span>Ran a collaboration with Leica Geosystems to evaluate a number of LiDar solutions in the context of capturing 3D reconstructions models of customer homes.</span></div>
+        </li>
+        
+        <li>
+            <span class="title">IKEA Place Studio</span>
+            <span class="theme">Real-Time</span>
+            <span class="year">2020</span>
+            <img alt="" src="meZUIeqhRl.gif" id="cover">
+            <div><span>Led <b>technical development</b> on the pipeline team which delivered over 3000 USDZ assets to the <b>IKEA Place Studio</b> project, we featured as part of Apple's LiDar powered iPad Pro launch in 2020.</span></div>
+        </li>
+
+        <li>
+            <span class="title">V-Ray to MDL</span>
+            <span class="theme">Real-Time</span>
+            <span class="year">2021</span>
+            <img alt="" src="KUNSTW.jpeg" id="cover">
+            <div><span>Led the <b>technical development</b> of a pipeline, which would convert our production materials based on the <b>V-Ray</b> Material BSDF to <b>NVIDIA</b>'s <b>Material Definition Language</b> (MDL).</span></div>
+        </li>
+        <li>
+            <span class="title">Virtualised Geometry for iOS</span>
+            <span class="theme">Real-Time</span>
+            <span class="year">2021</span>
+            <img alt="" src="XJqhPsenaL.gif" id="cover">
+            <div><span>Taking inspiration from <b>Epic Games</b>' Nanite technology in <b>Unreal Engine 5</b>, I led the development of a pipeline to create virtualised representations of our high-end production assets, and a <b>Metal</b> accelerated viewer for iOS which would render the content.</span></span></div>
+        </li>
+        <li>
+            <span class="title">IKEA USD Kitchen Scene</span>
+            <span class="theme">Development</span>
+            <span class="year">2021</span>
+            <img alt="" src="BGLDZS6WXV.gif" id="cover">
+            <div>
+                <span>Developed a pipeline which would convert IKEA's roomsets and product assemblies created in 3ds Max and turn them into compliant <b>USD</b> scenes using Houdini and our proprietry Key format.</span>
+            </div>
+        </li>
+
+        <li>
+            <span class="title">Procedural Texture Framework</span>
+            <span class="theme">Materials</span>
+            <span class="year">2021</span>
+            <img alt="" src="CyPw8AJe4H.gif" id="cover">
+            <div>
+                <span>Led the development of an open source framework for describing procedural images to be used on real-time assets.</span>
+            </div>
+        </li>
+        <li>
+            <span class="title">Textile Simulation Using AI</span>
+            <span class="theme">AI</span>
+            <span class="year">2020</span>
+            <img alt="" src="NEPIYZmVU4.gif" id="cover">
+            <div>
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+        </li>
+        <li>
+            <span class="title">Digital Store Window</span>
+            <span class="theme">Concept</span>
+            <span class="year">2019</span>
+            <img alt="" src="PY3AXA1DKf.gif" id="cover">
+            <div><span>Led concept and development of IKEA's Digital Store window running in Unity.</span></div>
+        </li>
+        <li>
+            <span class="title">Augmented Colour Ways</span>
+            <span class="theme">AR</span>
+            <span class="year">2019</span>
+            <img alt="" src="hZJOExGTwq.gif" id="cover">
+            <div>
+                <span>Ran the development of a POC projection system to see mutiple colourways available for a product.</span>
+            </div>
+        </li>
+        <li>
+            <span class="title">Products with Fur UE4</span>
+            <span class="theme">Real-Time</span>
+            <span class="year">2021</span>
+            <img alt="" src="UCb04c74nA.gif" id="cover">
+            <div>
+                <span>Ran an internal proof of concept to evaluate the feasability of Unreal Engine 4's groom tools towards IKEA's range of soft products.</span>
+            </div>
+        </li>
+        <li>
+            <span class="title">AR Anchoring Testing Framework</span>
+            <span class="theme">Augmented Reality</span>
+            <span class="year">2021</span>
+            <img alt="" src="ar_benchmark.jpg" id="cover">
+            <div><span>Lead the development of a benchmarking tool for comparing the accuracy of different AR Anchoring platforms.</span></div>
+        </li>
+        <li>
+            <span class="title">Yarn Based Textile Rendering</span>
+            <span class="theme">Rendering</span>
+            <span class="year">2021</span>
+            <img alt="" src="WH5FSoVQOA.gif" id="cover">
+            <div><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+            <span class="title">3D Production Photos</span>
+            <span class="theme">PRESENTATION</span>
+            <span class="year">2021</span>
+            <img alt="" src="daLh7agwIe.gif" id="cover">
+            <div><span>Developed the production pipeline for publishing 3D marketing images on Facebooks 3D photos capability.</span></div>
+        </li>
+        <li>
+            <span class="title">WexXR Device API in e-Commerce</span>
+            <span class="theme">PRESENTATION</span>
+            <span class="year">2021</span>
+            <img alt="" src="DfRYD4J3s2.gif" id="cover">
+            <div><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+            <span class="title">Mechanical Aquisition of Textiles</span>
+            <span class="theme">PRESENTATION</span>
+            <span class="year">2021</span>
+            <img alt="" src="GMBYNinxok.gif" id="cover">
+            <div><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+            <span class="title">USDZ State Report e-Commerce</span>
+            <span class="theme">PRESENTATION</span>
+            <span class="year">2021</span>
+            <img alt="" src="Picture2.png" id="cover">
+            <div><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+            <span class="title">Configurable IKEA DELAKTIG</span>
+            <span class="theme">PRESENTATION</span>
+            <span class="year">2021</span>
+            <img alt="" src="jCGHvbMI5y.gif" id="cover">
+            <div><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li class="start">
+            <span class="title">Multiwood Bespoke Catalogue Imagary</span>
+            <span class="theme">Rendering</span>
+            <span class="year">2017</span>
+            <img alt="" src="eildon.jpg" id="cover">
+            <img alt="" src="eildon.jpg" id="cover">
+            <div><span>Modelling, staging, lighting and rendering of..</span></div>
+        </li>
+        <li>
+            <span class="title">Multiwood Bespoke Catalogue Imagary</span>
+            <span class="theme">Rendering</span>
+            <span class="year">2017</span>
+            <img alt="" src="eildon1.jpg" id="cover">
+            <div><span>Modelling, staging, lighting and rendering of..</span></div>
+        </li>
+        <li>
+            <span class="title">Multiwood Bespoke Catalogue Imagary</span>
+            <span class="theme">Rendering</span>
+            <span class="year">2017</span>
+            <img alt="" src="eildon3.jpg" id="cover">
+            <div><span>Modelling, staging, lighting and rendering of..</span></div>
+        </li>
+        <li>
+            <span class="title">Torberry Kitchen</span>
+            <span class="theme">Rendering</span>
+            <span class="year">2016</span>
+            <img alt="" src="torb1.jpg" id="cover">
+            <div><span>Modelling, staging, lighting and rendering of..</span></div>
+        </li>
+        <li>
+            <span class="title">Torberry Kitchen</span>
+            <span class="theme">Rendering</span>
+            <span class="year">2016</span>
+            <img alt="" src="torb2.jpg" id="cover">
+            <div><span>Modelling, staging, lighting and rendering of..</span></div>
+        </li>
+        <li>
+            <span class="title">Baystone Series</span>
+            <span class="theme">Rendering</span>
+            <span class="year">2015</span>
+            <img alt="" src="baystone.jpg" id="cover">
+            <div><span>Modelling, staging, lighting and rendering of..</span></div>
+        </li>
+        <li>
+            <span class="title">Living</span>
+            <span class="theme">Rendering</span>
+            <span class="year">2015</span>
+            <img alt="" src="liv.jpg" id="cover">
+            <div><span>Modelling, staging, lighting and rendering of..</span></div>
+        </li>
+    </ul>
+
+
+</body>
+
+</html>
